@@ -11,7 +11,7 @@ async def dovizcek(bot, message):
         distek = requests.get(dovizurl)
         dveri = distek.json()
         dsonuc = dveri['USD']
-        text = f"Dolar:\nAlış: {dsonuc['alis']}\nSatış: {dsonuc['satis']}
+        text = f"Dolar:\nAlış: {dsonuc['alis']}\nSatış: {dsonuc['satis']}"
         await bot.send_message(
             chat_id=message.chat.id,
             text=text)
