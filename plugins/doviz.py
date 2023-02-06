@@ -14,7 +14,7 @@ async def dovizcek(bot, message):
         eistek = requests.get(dovizurl)
         everi = eistek.json()
         esonuc = everi['EUR']
-        text = f"Dolar:\nAlış: `{dsonuc['alis']}`\nSatış: `{dsonuc['satis']}`\n\Euro:\nAlış: `{esonuc['alis']}`\nSatış: `{esonuc['satis']}`"
+        text = f"Dolar:\nAlış: `{dsonuc['alis']}`\nSatış: `{dsonuc['satis']}`\n\nEuro:\nAlış: `{esonuc['alis']}`\nSatış: `{esonuc['satis']}`"
         await bot.send_message(
             chat_id=message.chat.id,
             text=text)
