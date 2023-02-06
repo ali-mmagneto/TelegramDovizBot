@@ -14,7 +14,7 @@ async def altincek(bot, message):
         gistek = requests.get(dovizurl)
         gveri = gistek.json()
         gsonuc = gveri['GA']
-        text = f"Çeyrek Altın:\nAlış: `{asonuc['alis']}`\nSatış: `{asonuc['satis']}`\n\nGram Altın:\nAlış: `{gsonuc['alis']}`\nSatış: `{gsonuc['satis']}`"
+        text = f"Çeyrek Altın:\nAlış: `{asonuc['alis']}`\nSatış: `{asonuc['satis']}`\nDeğişim: `{asonuc['d_oran']}%`\n\nGram Altın:\nAlış: `{gsonuc['alis']}`\nSatış: `{gsonuc['satis']}`\nDeğişim: `{gsonuc['d_oran']}%`"
         await bot.send_message(
             chat_id=message.chat.id,
             text=text)
