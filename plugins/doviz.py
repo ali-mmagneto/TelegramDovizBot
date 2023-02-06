@@ -1,7 +1,7 @@
 # Coded By :d
 
 from pyrogram import Client, filters
-
+import requests
 
 dovizurl = "https://api.genelpara.com/embed/doviz.json"
 
