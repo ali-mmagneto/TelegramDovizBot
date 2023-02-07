@@ -16,8 +16,8 @@ async def altincek(bot, message):
         gsonuc = gveri['GA']
         artis = "caret-up"
         azalis = "caret-down"
-        gyön = f"{gsonuc['alis']}"
-        ayön = f"{asonuc['alis']}"
+        gyön = f"{gsonuc['d_yon']}"
+        ayön = f"{asonuc['d_yon']}"
         if ayön == azalis:
             aemoji = "📉" 
         else:
