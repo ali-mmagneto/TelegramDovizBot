@@ -16,6 +16,8 @@ async def dovizcek(bot, message):
         esonuc = everi['EUR']
         dyön = f"{dsonuc['d_yon']}"
         eyön = f"{esonuc['d_yon']}"
+        artis = "caret-up"
+        azalis = "caret-down"
         if dyön == azalis:
             demoji = "📉" 
         else:
