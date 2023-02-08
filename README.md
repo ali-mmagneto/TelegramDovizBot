@@ -8,4 +8,3 @@ Veriler https://genelpara.com/ adresinden çekilmektedir.
 
 Tüm Kodlama https://t.me/mmagneto tarafından yapılmıştır. 
 
-# t.me/mmagneto
