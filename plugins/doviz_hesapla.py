@@ -11,13 +11,13 @@ dovizurl = "https://api.genelpara.com/embed/doviz.json"
 async def dovizhesap(bot, message):
     try:
         msg = unidecode(message.text).upper().split()
-        doviz = msg[1]
-        sayi = msg[2] 
+        doviz = str(msg[1]) 
+        sayi = int(msg[2]) 
         distek = requests.get(dovizurl)
         dveri = distek.json()
         kur1 = dveri[doviz]
-        kur = f"{kur1['satis']}" 
-        fiyat = float(kur) * int(sayi)
+        kur = float(kur1['satis'])
+        fiyat = kur * sayi
         message.reply_text(f"{sayi} {doviz} = {fiyat} TL")
     except Exception as e:
         bot.send_message(message.chat.id, f"{e}")
