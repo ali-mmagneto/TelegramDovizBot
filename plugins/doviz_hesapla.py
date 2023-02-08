@@ -10,7 +10,7 @@ dovizurl = "https://api.genelpara.com/embed/doviz.json"
 @Client.on_message(filters.command('hesap'))
 async def dovizhesap(bot, message):
     try:
-        msg = unidecode(message.text).lower().split()
+        msg = unidecode(message.text).upper().split()
         doviz = msg[1]
         sayi = msg[2] 
         distek = requests.get(dovizurl)
