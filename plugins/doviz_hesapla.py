@@ -7,12 +7,12 @@ from unidecode import unidecode
 dovizurl = "https://api.genelpara.com/embed/doviz.json"
 
 
-@Client.on_message(filters.command('doviz'))
-async def dovizcek(bot, message):
+@Client.on_message(filters.command('hesap'))
+async def dovizhesap(bot, message):
     try:
         msg = unidecode(message.text).lower().split()
-        doviz = yer[1]
-        sayi = yer[2] 
+        doviz = msg[1]
+        sayi = msg[2] 
         distek = requests.get(dovizurl)
         dveri = distek.json()
         kur = dveri[doviz]
