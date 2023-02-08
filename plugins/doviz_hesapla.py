@@ -15,8 +15,9 @@ async def dovizhesap(bot, message):
         sayi = msg[2] 
         distek = requests.get(dovizurl)
         dveri = distek.json()
-        kur = dveri[doviz]
-        fiyat = kur * sayi
+        kur1 = dveri[doviz]
+        kur = f"{kur1['satis']}" 
+        fiyat = float(kur) * int(sayi)
         message.reply_text(f"{sayi} {doviz} = {fiyat} TL")
     except Exception as e:
         bot.send_message(message.chat.id, f"{e}")
