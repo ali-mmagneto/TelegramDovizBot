@@ -7,4 +7,4 @@ Dolarda 30 tl yi görmemek dileğiyle..
 Veriler https://genelpara.com/ adresinden çekilmektedir.
 
 Tüm Kodlama https://t.me/mmagneto tarafından yapılmıştır. 
-
+Soru, öneri, şikayet: https://t.me/mmagneto
